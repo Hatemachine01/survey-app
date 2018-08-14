@@ -13,4 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+
  @import "bootstrap";
+ @import "font-awesome";
+ @import "font-awesome-sprockets";
+ @import './scss/grayscale.scss';
+  @import './fontawesome-free/scss/fontawesome.scss';
+ @import './fontawesome-free/css/all.css';

@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'mixins';
+
+// Fixed Width Icons
+// -------------------------
+.#{$fa-css-prefix}-fw {
+  text-align: center;
+  width: (20em / 16);
+}

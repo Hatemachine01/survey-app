@@ -15,4 +15,7 @@
 //= require_tree .
 //= require jquery3
 //= require popper
+//= require grayscale.js
+//= require grayscale.min.js
 //= require bootstrap-sprockets
+
