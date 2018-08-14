@@ -37,6 +37,7 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'devise'
 gem 'font-awesome-sass', '~> 5.2.0'
 
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
