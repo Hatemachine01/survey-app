@@ -11,11 +11,12 @@
 // about supported directives.
 //
 
-//= require jquery2
+//= require jquery
 //= require rails-ujs
 //= require turbolinks
 //= require popper
+//= require bootstrap-sprockets
 //= require grayscale.js
 //= require grayscale.min.js
-//= require bootstrap-sprockets
+
 
