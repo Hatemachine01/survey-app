@@ -35,7 +35,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.1'
 gem 'devise'
-gem 'font-awesome-sass', '~> 5.2.0'
 
 
 group :development, :test do
