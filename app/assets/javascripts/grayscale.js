@@ -1,5 +1,6 @@
+////JQUERY TO HIDE NAVBAR UPON SCROLLING DOWN
+
 $( document ).ready(function() {
-    console.log("INSIDE")
     $(function() {
     $(document).on("mousewheel", function() {
       if($(document).scrollTop() < 100){
