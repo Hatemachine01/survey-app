@@ -20,3 +20,30 @@
 //= require grayscale.min.js
 
 
+////JQUERY TO HIDE NAVBAR UPON SCROLLING DOWN
+
+// $(window).scroll(
+//     {
+//         previousTop: 0
+//     }, 
+//     function () {
+//     var currentTop = $(window).scrollTop();
+//     if (currentTop < this.previousTop) {
+//         $(".navbar").show();
+//     } else {
+//         $(".navbar").hide();
+//     }
+//     this.previousTop = currentTop;
+// });
+
+
+$(function() {
+  $(document).on("mousewheel", function() {
+    if($(document).scrollTop() < 100){
+        $('.navbar').show();
+    } else {
+        $('.navbar').hide();
+    
+    }; 
+  });
+});
