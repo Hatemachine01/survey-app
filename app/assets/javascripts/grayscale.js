@@ -1,4 +1,17 @@
-console.log("CARGO!")
+$( document ).ready(function() {
+    console.log("INSIDE")
+    $(function() {
+    $(document).on("mousewheel", function() {
+      if($(document).scrollTop() < 100){
+          $('.navbar').show();
+      } else {
+          $('.navbar').hide();
+      
+      }; 
+    });
+  });
+});
+
 
 (function($) {
   "use strict"; // Start of use strict
