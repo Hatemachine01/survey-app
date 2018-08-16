@@ -37,13 +37,16 @@
 // });
 
 
-$(function() {
-  $(document).on("mousewheel", function() {
-    if($(document).scrollTop() < 100){
-        $('.navbar').show();
-    } else {
-        $('.navbar').hide();
-    
-    }; 
-  });
+$( document ).ready(function() {
+		$(function() {
+	  $(document).on("mousewheel", function() {
+	    if($(document).scrollTop() < 100){
+	        $('.navbar').show();
+	    } else {
+	        $('.navbar').hide();
+	    
+	    }; 
+	  });
+	});
 });
+
