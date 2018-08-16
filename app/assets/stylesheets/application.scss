@@ -95,8 +95,6 @@ input::-webkit-input-placeholder {
 }
 
  
-
-
 /* iPad [portrait + landscape] */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	.form-area { margin-top: 20%; }
@@ -104,7 +102,7 @@ input::-webkit-input-placeholder {
 }
 
 /* iPhone [portrait + landscape] */
-@media only screen and (max-device-width: 480px) {
-	.form-area { margin-top: 20%; }
+@media only screen and (max-device-width: 380px) {
+	.form-area { margin-top: 25%; }
 
 }
