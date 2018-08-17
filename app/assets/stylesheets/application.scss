@@ -29,10 +29,18 @@
  * General styles
  */
 
+///SURVEY EXPLATION
+
+.survey-explanation {
+	color:white;
+	margin-top:15%;
+	margin: auto;
+}
 
 
-
-
+.registration {
+	margin-top: 10%;
+}
 
 ////REGISTRATION FORM
 
@@ -43,6 +51,7 @@ body.registration {
 
 .form-area {
 	margin-top:10%;
+	margin: auto;
 }
 
 h1.title { 
@@ -82,11 +91,11 @@ input::-webkit-input-placeholder {
 
 }
 
-.main-form{
+.main-form {
  	margin-top: 30px;
  	margin: 0 auto;
  	max-width: 330px;
-    padding: 40px 40px;
+  padding: 40px 40px;
 
 }
 
