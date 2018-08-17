@@ -1,7 +1,10 @@
-///JQUERY FOR READ MORE FUNCTIONALITIES
 
-$(document).ready(function() {
-  $("#toggle").click(function() {
+
+
+
+$( document ).on('turbolinks:load', function() {
+  ///JQUERY FOR READ MORE FUNCTIONALITIES
+    $("#toggle").click(function() {
     var elem = $("#toggle").text();
     if (elem == "Read More") {
       //Stuff to do when btn is in the read more state
@@ -13,15 +16,12 @@ $(document).ready(function() {
       $("#text").slideUp();
     }
   });
-});
-
-
-
+ 
 
 
 ////JQUERY TO HIDE NAVBAR UPON SCROLLING DOWN
 
-$( document ).ready(function() {
+
     $(function() {
     $(document).on("mousewheel", function() {
       if($(document).scrollTop() < 10){
@@ -32,7 +32,7 @@ $( document ).ready(function() {
       }; 
     });
   });
-});
+
 
 
 (function($) {
@@ -77,3 +77,6 @@ $( document ).ready(function() {
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+
+})
