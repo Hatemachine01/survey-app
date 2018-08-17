@@ -1,4 +1,69 @@
-<div class="container registration">
+		 <% if mobile_device? %>
+
+		 <div class="container registration">
+	<div class="row">
+			<div class="form-area">
+					<div class="main-login main-form col-6">
+						<form class="form-horizontal" method="post" action="#">
+							
+							<div class="form-group">
+								<label for="email" class="cols-sm-2 control-label">Your Email</label>
+								<div class="cols-sm-10">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+										<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="password" class="cols-sm-2 control-label">Password</label>
+								<div class="cols-sm-10">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+										<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+								<div class="cols-sm-10">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+										<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group ">
+								<button type="button" class="btn btn-primary btn-lg btn-block login-button">Comenzar</button>
+							</div> 
+						</form>
+					</div>
+				</div>
+						<div class="survey-explanation col-6">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis, neque at congue imperdiet, nulla est ornare.
+
+						<span id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis, neque at congue imperdiet, nulla est ornare arcu, pharetra tincidunt eit risus quis neque. In sit amet tellus sed tellus placerat sollicitudin. Aenean efficitur, est vel gravida fermentum, elit leo mollis lorem, id sollicitudin ex nibh ac justo. Nullam aliquet neque in felis malesuada, eget ornare diam egestas.
+
+						<%= image_tag ( "stats.jpg"), :class=>"img-fluid mb-3 mb-lg-0 stats" %>
+						</span>
+
+						<div class="btn-container">
+							<button id="toggle" class="btn btn-outline-dark">Read More</button>
+
+						</div>
+					</p>	
+					
+				</div>
+			
+			</div>
+		</div>	
+
+		  <% else %>
+		  	<div class="container registration">
 	<div class="row">
 			<div class="survey-explanation col-6">
 					<p>
@@ -49,3 +114,5 @@
 				</div>
 			</div>
 		</div>	
+
+		   <% end %>
