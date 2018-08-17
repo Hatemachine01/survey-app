@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
 #mainNav {
+  margin-top: 0!important;
   min-height: 30px;
   background-color: $white;
   .navbar-toggler {
@@ -32,6 +33,7 @@
     }
   }
   @media (min-width: 992px) {
+    margin-top: 0!important;
     color:#ffffff;
     padding-top: 0;
     padding-bottom: 0;
