@@ -11,6 +11,8 @@ class UserDashboard < Administrate::BaseDashboard
     answers: Field::HasMany,
     id: Field::Number,
     email: Field::String,
+    password: Field::Password,
+    password_confirmation: Field::Password,
     encrypted_password: Field::String,
     reset_password_token: Field::String,
     reset_password_sent_at: Field::DateTime,
@@ -39,7 +41,6 @@ class UserDashboard < Administrate::BaseDashboard
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :answers,
     :id,
     :email,
     :encrypted_password,
@@ -61,6 +62,8 @@ class UserDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :answers,
     :email,
+    :password,
+    :password_confirmation,
     :encrypted_password,
     :reset_password_token,
     :reset_password_sent_at,
