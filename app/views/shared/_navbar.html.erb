@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+      <%= link_to "MEVS", root_path , :class => "nav-link js-scroll-trigger" %>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%= link_to "Objectivo", root_path(anchor: 'about'), :class => "nav-link js-scroll-trigger" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Información", root_path(anchor: 'projects'), :class => "nav-link js-scroll-trigger" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Registro", registro_path , :class => "nav-link js-scroll-trigger" %>
+        </li>
+        <li class="nav-item">
+           <%= link_to "Contacto", root_path(anchor: "contact"), :class => "nav-link js-scroll-trigger" %>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="http://www.vsdconsultores.com.mx/">VSDConsultores</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
