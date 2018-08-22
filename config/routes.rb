@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
 
-  devise_for :users
+  devise_for :users , skip: [:registrations]
 	
 	root to: 'static#home'
 	get 'registro', to: 'static#registration'
