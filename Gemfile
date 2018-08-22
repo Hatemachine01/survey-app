@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.1'
 gem 'devise'
-gem 'administrate'
+gem 'administrate' 
 gem 'bourbon'
 
 group :development, :test do

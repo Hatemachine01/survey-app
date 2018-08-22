@@ -1,0 +1,8 @@
+
+<div class="jumbotron">
+  <h1 class="display-4 center"> Survey!</h1>
+  <h2> <%= @category.category_name %> </h2>
+		<% @category.questions.each do |question|  %>
+		<h3> <%= question.question_body %></h3>
+		<% end %>
+</div>

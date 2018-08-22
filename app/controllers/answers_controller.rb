@@ -1,4 +1,6 @@
 class AnswersController < ApplicationController
+	before_action :set_category	
+
 	def index
 	end
 
@@ -6,7 +8,8 @@ class AnswersController < ApplicationController
 	end
 
 	def new
-
+		@answer = Answer.new
+		p params
 	end
 
 	def edit
@@ -21,5 +24,9 @@ class AnswersController < ApplicationController
 	def destroy
 	end
 
+	##PRIVATE METHOD 
+	def set_category
+		@category = Category.first
+	end
 
 end
