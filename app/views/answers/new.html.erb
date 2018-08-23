@@ -1,8 +1,12 @@
-
-<div class="jumbotron">
+<div class="well">
   <h1 class="display-4 center"> Survey!</h1>
-  <h2> <%= @category.category_name %> </h2>
-		<% @category.questions.each do |question|  %>
-		<h3> <%= question.question_body %></h3>
+  <h2> <%= @current_category.category_name %> </h2>
+		<%= @current_question.question_body %>
+		<%= form_for @answer do |s| %>
+		   <%= s.radio_button :value, 1, id: "v_1" %>
+		   <label for = "v_1">Si</label>
+		   <%= s.radio_button :value, 2, id: "v_2" %>
+		   <label for = "v_2">No</label>
+		   <%= s.submit "Submit" %>
 		<% end %>
 </div>

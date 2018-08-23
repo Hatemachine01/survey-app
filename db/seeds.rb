@@ -31,6 +31,14 @@ question_8 = Question.create(category_id: category_1.id, question_body: "Al dise
 question_9 = Question.create(category_id: category_1.id, question_body: "Se realizó un análisis o mapeo que identifica a los diversos actores, instituciones o programas públicos y privados influyentes e interesados con los que se podría trabajar en colaboración / coordinación para brindar un mejor servicio, que incremente los efectos positivos de las intervenciones y contrarreste los efectos no deseados.", yes_value: 1.5, no_value: 0)
 question_10 = Question.create(category_id: category_1.id, question_body: "La institución tiene claridad de cuál es el valor distintivo de sus intervenciones y del cual se considera que depende más su eficacia.", yes_value: 1.5, no_value: 0)
 
+
+##Question for Category 2
+question_11 = Question.create(category_id: category_2.id, question_body: "DOES GOD EXIST?", yes_value: 1.5, no_value: 0)
+question_12 = Question.create(category_id: category_3.id, question_body: "LAS QUESADILLAS LLEVAN QUESO?", yes_value: 1.5, no_value: 0)
+
+
+
+
 #Answers
 answer_1 = Answer.create(user_id: admin.id, question_id: question_1.id, ques_category: question_1.category_id, value: true)
 answer_2 = Answer.create(user_id: admin.id, question_id: question_2.id, ques_category: question_2.category_id, value: false)
