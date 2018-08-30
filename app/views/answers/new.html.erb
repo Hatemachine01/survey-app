@@ -2,7 +2,7 @@
   <h1 class="display-4 center"> Survey!</h1>
   <h2> <%= @current_category.category_name %> </h2>
 		<%= @current_question.question_body %>
-		<%= form_for @answer do |s| %>
+		<%= form_for @answer,  remote: true do |s| %>
 		   <%= s.radio_button :value, 1, id: "v_1" %>
 		   <label for = "v_1">Si</label>
 		   <%= s.radio_button :value, 2, id: "v_2" %>
