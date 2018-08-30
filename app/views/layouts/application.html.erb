@@ -15,10 +15,18 @@
   </head>
 
   <body class= <%="registration" if action_name == 'registration'%>>
-    <!-- NAVBAR  --> 
-    <%= render 'shared/navbar' %>
-      <%= yield %>
-     <!-- FOOTER -->  
+    <!-- NAVBAR  -->    
+    <% if content_for? :nav %>
+      <%= content_for :nav %>
+    <% else %>
+      <%= render 'shared/navbar' %>
+    <% end %>
+   
+    <%= yield %>
+   <!-- FOOTER -->  
     <%= render 'shared/footer' %>
   </body>
 </html>
+
+
+

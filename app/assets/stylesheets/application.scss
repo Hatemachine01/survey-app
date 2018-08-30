@@ -18,7 +18,6 @@
  @import './scss/grayscale.css';
  @import './scss/grayscale.scss';
  @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
  @import "bourbon";
 
 
@@ -32,7 +31,20 @@
  * General styles
  */
 
-///SURVEY EXPLATION
+
+///
+
+.survey-form {
+	display: inline-block;
+	width: 50%;
+	height: 50%;
+}
+
+.custom-nav {
+	 background-color: black;
+}
+
+///SURVEY EXPLANATION
 
 .survey-explanation {
 	color:white;

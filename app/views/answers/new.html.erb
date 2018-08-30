@@ -1,12 +1,18 @@
-<div class="well">
-  <h1 class="display-4 center"> Survey!</h1>
-  <h2> <%= @current_category.category_name %> </h2>
-		<%= @current_question.question_body %>
-		<%= form_for @answer,  remote: true do |s| %>
-		   <%= s.radio_button :value, 1, id: "v_1" %>
-		   <label for = "v_1">Si</label>
-		   <%= s.radio_button :value, 2, id: "v_2" %>
-		   <label for = "v_2">No</label>
-		   <%= s.submit "Submit" %>
-		<% end %>
+<% content_for :nav, render('shared/custom_nav') %>
+<div class="row">
+  <div class="col-sm-6"><div class="text-center">
+	 <div class="well survey-form">
+		  <h1 class="display-4 center"> MEVS</h1>
+		  <h2> <%= @current_category.category_name %> </h2>
+				<%= @current_question.question_body %>
+				<%= form_for @answer,  remote: true do |s| %>
+				   <%= s.radio_button :value, 1, id: "v_1" %>
+				   <label for = "v_1">Si</label>
+				   <%= s.radio_button :value, 2, id: "v_2" %>
+				   <label for = "v_2">No</label>
+				   <%= s.submit "Submit"  , :class=> "btn-primary btn-sm"  %>
+				<% end %>
+	</div>
+</div></div>
+  <div class="col-sm-6">	<%= image_tag ( "stats.jpg"), :class=>"img-fluid mb-3 mb-lg-0 stats" %></div>
 </div>
