@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180820224707) do
+ActiveRecord::Schema.define(version: 20180830022342) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,17 +30,17 @@ ActiveRecord::Schema.define(version: 20180820224707) do
     t.string "category_name"
     t.integer "threshold1"
     t.integer "threshold2"
-    t.integer "escala_bajo"
-    t.integer "escala_medio"
-    t.integer "escala_alto"
+    t.float "escala_bajo"
+    t.float "escala_medio"
+    t.float "escala_alto"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "questions", force: :cascade do |t|
     t.text "question_body"
-    t.integer "yes_value"
-    t.integer "no_value"
+    t.float "yes_value"
+    t.float "no_value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "category_id"
