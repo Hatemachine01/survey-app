@@ -1,7 +1,4 @@
 
-
-
-
 $( document ).on('turbolinks:load', function() {
   ///JQUERY FOR READ MORE FUNCTIONALITIES
     $("#toggle").click(function() {
@@ -17,23 +14,6 @@ $( document ).on('turbolinks:load', function() {
     }
   });
  
-
-
-////JQUERY TO HIDE NAVBAR UPON SCROLLING DOWN
-
-
-    $(function() {
-    $(document).on("mousewheel", function() {
-      if($(document).scrollTop() < 10){
-          $('.navbar').show();
-      } else {
-          $('.navbar').hide();
-      
-      }; 
-    });
-  });
-
-
 
 (function($) {
   "use strict"; // Start of use strict
@@ -75,6 +55,24 @@ $( document ).on('turbolinks:load', function() {
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+  
+
+////JQUERY TO HIDE NAVBAR UPON SCROLLING DOWN
+
+
+    $(function() {
+    $(document).on("mousewheel", function() {
+      if($(document).scrollTop() < 10){
+          $('.navbar').show();
+      } else {
+          $('.navbar').hide();
+      
+      }; 
+    });
+  });
+
+
 
 })(jQuery); // End of use strict
 

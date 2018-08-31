@@ -10,16 +10,21 @@
   border: 0;
 }
 
+.initial-link  a {
+  color:white;
+}
+
+
 .btn-primary {
-  background-color: $primary;
+  background-color: gray;
   &:hover {
-    background-color: darken($primary, 10%);
+    background-color: darken;
   }
   &:focus {
-    background-color: darken($primary, 10%);
+    background-color: white($primary, 10%);
     color: white;
   }
   &:active {
-    background-color: darken($primary, 15%) !important;
+    background-color: white($primary, 15%) !important;
   }
 }
