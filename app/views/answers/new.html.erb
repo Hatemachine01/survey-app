@@ -1,3 +1,9 @@
+<%= javascript_tag do %>
+  window.onbeforeunload = function() {
+    return "Are you sure?";
+ };
+<% end %>
+
 <% content_for :nav, render('shared/custom_nav') %>
 <div class="row">
   <div class="col-sm-6"><div class="text-center">
