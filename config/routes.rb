@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 	root to: 'static#home'
 	get 'registro', to: 'static#registration'
   resources :answers
+  match '*unmatched_route', :to => 'errors#error_404', :via => :all
 end
 
 
