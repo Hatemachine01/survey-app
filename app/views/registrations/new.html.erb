@@ -1,0 +1,71 @@
+  <% if mobile_device? %>
+     <div class="container registration">
+  <div class="row">
+      <div class="form-area">
+          <div class="main-login main-form col-6">
+            <form class="form-horizontal" method="post" action="#">
+
+              <div class="form-group initial-link">
+                <div class="btn btn-primary btn-lg btn-block" >
+          <!--  -->
+                </div>
+              </div> 
+            </form>
+          </div>
+        </div>
+            <div class="survey-explanation col-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis, neque at congue imperdiet, nulla est ornare.
+
+            <span id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis, neque at congue imperdiet, nulla est ornare arcu, pharetra tincidunt eit risus quis neque. In sit amet tellus sed tellus placerat sollicitudin. Aenean efficitur, est vel gravida fermentum, elit leo mollis lorem, id sollicitudin ex nibh ac justo. Nullam aliquet neque in felis malesuada, eget ornare diam egestas.
+
+            <%= image_tag ( "stats.jpg"), :class=>"img-fluid mb-3 mb-lg-0 stats" %>
+            </span>
+
+            <div class="btn-container">
+              <button id="toggle" class="btn btn-secondary">Read More</button>
+            </div>
+          </p>  
+          
+        </div>
+      
+      </div>
+    </div>  
+
+      <% else %>
+        <div class="container registration">
+  <div class="row">
+      <div class="survey-explanation col-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis, neque at congue imperdiet, nulla est ornare arcu, pharetra tincidunt eit risus quis neque. In sit amet tellus sed tellus placerat sollicitudin. Aenean efficitur, est vel gravida fermentum, elit leo mollis lorem, id sollicitudin ex nibh ac justo. Nullam aliquet neque in felis malesuada, eget ornare diam egestas.
+          </p>  
+          <%= image_tag ( "stats.jpg"), :class=>"img-fluid mb-3 mb-lg-0 stats" %>
+        </div>
+      
+      <div class="form-area">
+          <div class="main-login main-form col-6">
+            <div class="form-horizontal">
+                            
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+                    <div class="field">
+                      <%= f.label :email %><br />
+                      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                    </div>
+
+                    <div class="actions">
+                      <%= f.submit "Comenzar Cuestionario" %>
+                    </div>
+                  <% end %>
+
+              
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+<% end %>
+

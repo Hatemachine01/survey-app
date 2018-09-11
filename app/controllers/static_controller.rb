@@ -5,6 +5,7 @@ class StaticController < ApplicationController
 
 
 	def registration
+	
 	end
 	
 end

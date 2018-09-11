@@ -9,11 +9,14 @@ Rails.application.routes.draw do
   end
 
 
-  devise_for :users , skip: [:registrations]
+  devise_for :users, controllers: {registrations: "registrations"}  
+  # skip: [:registrations]
 	
 	root to: 'static#home'
 	get 'registro', to: 'static#registration'
   resources :answers
+
+
   match '*unmatched_route', :to => 'errors#error_404', :via => :all
 end
 
