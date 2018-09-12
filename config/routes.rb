@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 	
 	root to: 'static#home'
 	get 'registro', to: 'static#registration'
+  get 'results', to: 'results#results'
   resources :answers
 
 
