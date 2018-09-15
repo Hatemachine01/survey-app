@@ -26,14 +26,15 @@ class ResultsController < ApplicationController
 			end
 			@sum["cat_#{ind + 1}"] = @total_category_value.to_s
 			p "@sum = #{@sum}"
-	  end  
+	  end
 	  @sum
 	end
 
 
 	def results
 		@answers = current_user.answers
-		@values = answers_total_value	
+		@values = answers_total_value
+		sign_out(current_user)  	
 	end
 end
 

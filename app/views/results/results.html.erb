@@ -1,82 +1,87 @@
-<h1> Results </h1>
+<% content_for :nav, render('shared/custom_nav') %>
 
-<h2> <%= Category.find(1).category_name %> </h2>
-	<% @answers.where(ques_category: 1).each do |answer| %>
-		<h5> Pregunta # = <%= answer.id %> </h5>
-		<% question = Question.find(answer.question_id)%>
-		<p> Question: <%= question.question_body%> </p>
-		<% if answer.value  %>
-			<p> Respuesta: Verdadero </p>
-			<p> Valor: <%= question.yes_value %> </p>
-		<% else %>
-			<p> Respuesta: Falso </p>
-			<p> Valor: <%= question.no_value %> </p>
-		<% end %>
-	<% end %>	
-	<p> Suma por Categoria <%= @values["cat_1"] %> </p>
+<div class="container">
 
+	<h1> Results </h1>
 
-<h2> <%= Category.find(2).category_name %> </h2>
-	<% @answers.where(ques_category: 2).each do |answer| %>
-		<h5> Pregunta # = <%= answer.id %> </h5>
-		<% question = Question.find(answer.question_id)%>
-		<p> Question: <%= question.question_body%> </p>
-		<% if answer.value  %>
-			<p> Respuesta: Verdadero </p>
-			<p> Valor: <%= question.yes_value %> </p>
-		<% else %>
-			<p> Respuesta: Falso </p>
-			<p> Valor: <%= question.no_value %> </p>
-		<% end %>
-	<% end %>	
-	<p> Suma por Categoria <%= @values["cat_2"] %> </p>
+	<h2> <%= Category.find(1).category_name %> </h2>
+		<% @answers.where(ques_category: 1).each do |answer| %>
+			<h5> Pregunta # = <%= answer.id %> </h5>
+			<% question = Question.find(answer.question_id)%>
+			<p> Question: <%= question.question_body%> </p>
+			<% if answer.value  %>
+				<p> Respuesta: Verdadero </p>
+				<p> Valor: <%= question.yes_value %> </p>
+			<% else %>
+				<p> Respuesta: Falso </p>
+				<p> Valor: <%= question.no_value %> </p>
+			<% end %>
+		<% end %>	
+		<p> Suma por Categoria <%= @values["cat_1"] %> </p>
 
 
-
-<h2> <%= Category.find(3).category_name %> </h2>
-	<% @answers.where(ques_category: 3).each do |answer| %>
-		<h5> Pregunta # = <%= answer.id %> </h5>
-		<% question = Question.find(answer.question_id)%>
-		<p> Question: <%= question.question_body%> </p>
-		<% if answer.value  %>
-			<p> Respuesta: Verdadero </p>
-			<p> Valor: <%= question.yes_value %> </p>
-		<% else %>
-			<p> Respuesta: Falso </p>
-			<p> Valor: <%= question.no_value %> </p>
-		<% end %>
-	<% end %>	
-	<p> Suma por Categoria <%= @values["cat_3"] %> </p>
-
-
-<h2> <%= Category.find(4).category_name %> </h2>
-	<% @answers.where(ques_category: 4).each do |answer| %>
-		<h5> Pregunta # = <%= answer.id %> </h5>
-		<% question = Question.find(answer.question_id)%>
-		<p> Question: <%= question.question_body%> </p>
-		<% if answer.value  %>
-			<p> Respuesta: Verdadero </p>
-			<p> Valor: <%= question.yes_value %> </p>
-		<% else %>
-			<p> Respuesta: Falso </p>
-			<p> Valor: <%= question.no_value %> </p>
-		<% end %>
-	<% end %>	
-	<p> Suma por Categoria <%= @values["cat_4"] %> </p>
+	<h2> <%= Category.find(2).category_name %> </h2>
+		<% @answers.where(ques_category: 2).each do |answer| %>
+			<h5> Pregunta # = <%= answer.id %> </h5>
+			<% question = Question.find(answer.question_id)%>
+			<p> Question: <%= question.question_body%> </p>
+			<% if answer.value  %>
+				<p> Respuesta: Verdadero </p>
+				<p> Valor: <%= question.yes_value %> </p>
+			<% else %>
+				<p> Respuesta: Falso </p>
+				<p> Valor: <%= question.no_value %> </p>
+			<% end %>
+		<% end %>	
+		<p> Suma por Categoria <%= @values["cat_2"] %> </p>
 
 
 
-<h2> <%= Category.find(5).category_name %> </h2>
-	<% @answers.where(ques_category: 5).each do |answer| %>
-		<h5> Pregunta # = <%= answer.id %> </h5>
-		<% question = Question.find(answer.question_id)%>
-		<p> Question: <%= question.question_body%> </p>
-		<% if answer.value  %>
-			<p> Respuesta: Verdadero </p>
-			<p> Valor: <%= question.yes_value %> </p>
-		<% else %>
-			<p> Respuesta: Falso </p>
-			<p> Valor: <%= question.no_value %> </p>
-		<% end %>
-	<% end %>	
-	<p> Suma por Categoria <%= @values["cat_5"] %> </p>
+	<h2> <%= Category.find(3).category_name %> </h2>
+		<% @answers.where(ques_category: 3).each do |answer| %>
+			<h5> Pregunta # = <%= answer.id %> </h5>
+			<% question = Question.find(answer.question_id)%>
+			<p> Question: <%= question.question_body%> </p>
+			<% if answer.value  %>
+				<p> Respuesta: Verdadero </p>
+				<p> Valor: <%= question.yes_value %> </p>
+			<% else %>
+				<p> Respuesta: Falso </p>
+				<p> Valor: <%= question.no_value %> </p>
+			<% end %>
+		<% end %>	
+		<p> Suma por Categoria <%= @values["cat_3"] %> </p>
+
+
+	<h2> <%= Category.find(4).category_name %> </h2>
+		<% @answers.where(ques_category: 4).each do |answer| %>
+			<h5> Pregunta # = <%= answer.id %> </h5>
+			<% question = Question.find(answer.question_id)%>
+			<p> Question: <%= question.question_body%> </p>
+			<% if answer.value  %>
+				<p> Respuesta: Verdadero </p>
+				<p> Valor: <%= question.yes_value %> </p>
+			<% else %>
+				<p> Respuesta: Falso </p>
+				<p> Valor: <%= question.no_value %> </p>
+			<% end %>
+		<% end %>	
+		<p> Suma por Categoria <%= @values["cat_4"] %> </p>
+
+
+
+	<h2> <%= Category.find(5).category_name %> </h2>
+		<% @answers.where(ques_category: 5).each do |answer| %>
+			<h5> Pregunta # = <%= answer.id %> </h5>
+			<% question = Question.find(answer.question_id)%>
+			<p> Question: <%= question.question_body%> </p>
+			<% if answer.value  %>
+				<p> Respuesta: Verdadero </p>
+				<p> Valor: <%= question.yes_value %> </p>
+			<% else %>
+				<p> Respuesta: Falso </p>
+				<p> Valor: <%= question.no_value %> </p>
+			<% end %>
+		<% end %>	
+		<p> Suma por Categoria <%= @values["cat_5"] %> </p>
+</div>
