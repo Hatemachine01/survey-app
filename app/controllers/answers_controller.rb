@@ -46,7 +46,7 @@ class AnswersController < ApplicationController
 		number_of_questions = @current_category.questions.count
 			if @@current_category_id <= @@number_of_categories #checar condición menor, o menor igual?
 				p "Dentro de IF CATEGORY" * 3
-				if @@current_question_id == Question.count - 40
+				if @@current_question_id == Question.count - 10
 					redirect_to results_path	and return
 				elsif @current_category.questions.last.id <= @@current_question_id 
 				  @@current_category_id += 1 #checar condición menor, o menor igual?
