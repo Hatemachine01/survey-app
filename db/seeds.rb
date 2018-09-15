@@ -24,8 +24,8 @@ category_1 = Category.create(category_name: "Pertinencia", escala_bajo: 3.3, esc
 category_2 = Category.create(category_name: "Optimización de Recursos", escala_bajo: 3.3, escala_medio: 6.6, escala_alto: 10)
 category_3 = Category.create(category_name: "Causalidad de Efectos", escala_bajo: 3.3, escala_medio: 6.6, escala_alto: 10)
 category_4 = Category.create(category_name: "Evaluabilidad", escala_bajo: 3.3, escala_medio: 6.6, escala_alto: 10)
-category_5 = Category.create(category_name: "Valor por Dinero", escala_bajo: 3.3, escala_medio: 6.6, escala_alto: 10)
-category_6 = Category.create(category_name: "Sostenibilidad", escala_bajo: 3.3, escala_medio: 6.6, escala_alto: 10)
+category_5 = Category.create(category_name: "Sostenibilidad", escala_bajo: 3.3, escala_medio: 6.6, escala_alto: 10)
+# category_6 = Category.create(category_name: "Valor por Dinero", escala_bajo: 3.3, escala_medio: 6.6, escala_alto: 10)
 
 puts "Categories created"
 
@@ -94,16 +94,16 @@ question_50 = Question.create(category_id: category_5.id, question_body: "Se est
 
 
 ##Questions for Category 6
-question_51 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_52 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_53 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_54 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_55 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_56 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_57 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_58 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_59 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
-question_60 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_51 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_52 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_53 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_54 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_55 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_56 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_57 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_58 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_59 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
+# question_60 = Question.create(category_id: category_6.id, question_body: "", yes_value: 1, no_value: 0)
 
 
 puts "Questions created"

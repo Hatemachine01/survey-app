@@ -1,4 +1,63 @@
 <h1> Results </h1>
-<% @answers.each do |answer| %>
-	<p> <%= answer %></p>
-<% end %>	
+
+<h2> <%= Category.find(1).category_name %> </h2>
+	<% @answers.where(ques_category: 1).each do |answer| %>
+		<h5> Pregunta # = <%= answer.id %> </h5>
+		<% question = Question.find(answer.question_id)%>
+		<p> Question: <%= question.question_body%> </p>
+		<% if answer.value  %>
+			<p> Respuesta: Verdadero </p>
+			<p> Valor: <%= question.yes_value %> </p>
+		<% else %>
+			<p> Respuesta: Falso </p>
+			<p> Valor: <%= question.no_value %> </p>
+		<% end %>
+	<% end %>	
+	<p> Suma por Categoria <%= @values["cat_1"] %> </p>
+
+
+<h2> <%= Category.find(2).category_name %> </h2>
+	<% @answers.where(ques_category: 2).each do |answer| %>
+		<h5> Pregunta # = <%= answer.id %> </h5>
+		<% question = Question.find(answer.question_id)%>
+		<p> Question: <%= question.question_body%> </p>
+		<% if answer.value  %>
+			<p> Respuesta: Verdadero </p>
+			<p> Valor: <%= question.yes_value %> </p>
+		<% else %>
+			<p> Respuesta: Falso </p>
+			<p> Valor: <%= question.no_value %> </p>
+		<% end %>
+	<% end %>	
+	<p> Suma por Categoria <%= @values["cat_2"] %> </p>
+
+
+
+
+<% if false %>
+<h2> <%= Category.find(2).category_name %> </h2>
+	<% @answers.where(ques_category: 2).each do |answer| %>
+		<p> <%= answer.id %></p>
+	<% end %>	
+
+<h2> <%= Category.find(3).category_name %> </h2>
+	<% @answers.where(ques_category: 2).each do |answer| %>
+		<p> <%= answer.id %></p>
+	<% end %>	
+
+<h2> <%= Category.find(4).category_name %> </h2>
+	<% @answers.where(ques_category: 2).each do |answer| %>
+		<p> <%= answer.id %></p>
+	<% end %>	
+
+<h2> <%= Category.find(5).category_name %> </h2>
+	<% @answers.where(ques_category: 2).each do |answer| %>
+		<p> <%= answer.id %></p>
+	<% end %>	
+
+<h2> <%= Category.find(6).category_name %> </h2>
+	<% @answers.where(ques_category: 2).each do |answer| %>
+		<p> <%= answer.id %></p>
+	<% end %>
+
+<% end %>
